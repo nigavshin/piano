@@ -7,10 +7,12 @@
     <title>laslessVPN</title>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
+
   <body>
     <header class="header">
-      <div class="container">
+      <div class="header__container">
         <img
+          class="header__logo"
           src="./img/logo.svg"
           width="149"
           height="36"
@@ -33,9 +35,19 @@
             <a class="header__link" href="#">Help</a>
           </li>
         </ul>
-        <div class="container__button">
-          <button class="button button__sign-in" type="button">Sign in</button>
-          <button class="button button__sign-up" type="button">Sign up</button>
+        <div class="header__buttons">
+          <button
+            class="header__button header__button--sign-in button"
+            type="button"
+          >
+            Sign in
+          </button>
+          <button
+            class="header__button header__button--sign-up button"
+            type="button"
+          >
+            Sign up
+          </button>
         </div>
       </div>
     </header>
@@ -43,12 +55,12 @@
       <section class="main-screen">
         <h1 class="main-screen__title">
           Want anything to be easy with
-          <strong class="title--accent">LaslesVPN.</strong>
+          <strong class="main-screen__accent">LaslesVPN.</strong>
         </h1>
         <p class="main-screen__text">
           Provide a network for all your needs with ease and fun using
-          <strong class="text--accent">LaslesVPN</strong> discover interesting
-          features from us.
+          <strong class="main-screen__accent">LaslesVPN</strong> discover
+          interesting features from us.
         </p>
         <button class="button main-screen__button" type="button">
           Get Started
@@ -57,16 +69,23 @@
 
       <section class="advantages">
         <div class="advantages__wrap">
-          <div class="advantages__wrap--item">
-            <img src="./img/user.svg" width="55" height="55" alt="user" />
+          <div class="advantages__item">
+            <img
+              class="advantages__user"
+              src="./img/user.svg"
+              width="55"
+              height="55"
+              alt="user"
+            />
             <div class="advantages__text-wrap">
               <p class="advantages__number">90+</p>
               <p class="advantages__description">Users</p>
             </div>
           </div>
 
-          <div class="advantages__wrap--item">
+          <div class="advantages__item">
             <img
+              class="advantages__location"
               src="./img/location.svg"
               width="55"
               height="55"
@@ -78,8 +97,14 @@
             </div>
           </div>
 
-          <div class="advantages__wrap--item">
-            <img src="./img/server.svg" width="55" height="55" alt="server" />
+          <div class="advantages__item">
+            <img
+              class="advantages__server"
+              src="./img/server.svg"
+              width="55"
+              height="55"
+              alt="server"
+            />
             <div class="advantages__text-wrap">
               <p class="advantages__number">50+</p>
               <p class="advantages__description">Servers</p>
@@ -90,6 +115,7 @@
 
       <section class="features">
         <img
+          class="features__illustration-2"
           src="./img/illustration-2.svg"
           width="508"
           height="404"
@@ -105,19 +131,44 @@
           </p>
           <ul class="features__list--item">
             <li class="features__list">
-              <img src="/img/check.svg" width="24" height="24" alt="check" />
+              <img
+                class="features__check"
+                src="/img/check.svg"
+                width="24"
+                height="24"
+                alt="check"
+              />
               <p class="features__text">Powerfull online protection.</p>
             </li>
             <li class="features__list">
-              <img src="/img/check.svg" width="24" height="24" alt="check" />
+              <img
+                class="features__check"
+                src="/img/check.svg"
+                width="24"
+                height="24"
+                alt="check"
+              />
               <p class="features__text">Internet without borders.</p>
             </li>
             <li class="features__list">
-              <img src="/img/check.svg" width="24" height="24" alt="check" />
+              <img
+                class="features__check"
+                src="/img/check.svg"
+                width="24"
+                height="24"
+                alt="check"
+              />
               <p class="features__text">Supercharged VPN</p>
             </li>
             <li class="features__list">
-              <img src="/img/check.svg" width="24" height="24" alt="check" ß />
+              <img
+                class="features__check"
+                src="/img/check.svg"
+                width="24"
+                height="24"
+                alt="check"
+                ß
+              />
               <p class="features__text">No specific time limits.</p>
             </li>
           </ul>
@@ -132,6 +183,7 @@
         </p>
         <div class="choose-plan__item">
           <img
+            class="choose-plan__ill-free"
             src="./img/illustration-free.svg"
             width="145"
             height="165"
@@ -141,6 +193,7 @@
           <ul class="choose-plan__list--item">
             <li class="choose-plan__list">
               <img
+                class="choose-plan__check-2"
                 src="/img/check-2.svg"
                 width="24"
                 height="24"
@@ -150,6 +203,7 @@
             </li>
             <li class="choose-plan__list">
               <img
+                class="choose-plan__check-2"
                 src="/img/check-2.svg"
                 width="24"
                 height="24"
@@ -159,6 +213,7 @@
             </li>
             <li class="choose-plan__list">
               <img
+                class="choose-plan__check-2"
                 src="/img/check-2.svg"
                 width="24"
                 height="24"
@@ -168,6 +223,8 @@
             </li>
             <li class="choose-plan__list">
               <img
+                class="choose-plan__check-2"
+                class="choose-plan__check-2"
                 src="/img/check-2.svg"
                 width="24"
                 height="24"
@@ -183,6 +240,7 @@
         </div>
         <div class="choose-plan__item">
           <img
+            class="choose-plan__ill-free"
             src="./img/illustration-free.svg"
             alt="illustration-free"
             width="145"
@@ -192,6 +250,7 @@
           <ul class="choose-plan__list--item">
             <li class="choose-plan__list">
               <img
+                class="choose-plan__check-2"
                 src="/img/check-2.svg"
                 width="24"
                 height="24"
@@ -201,6 +260,7 @@
             </li>
             <li class="choose-plan__list">
               <img
+                class="choose-plan__check-2"
                 src="/img/check-2.svg"
                 width="24"
                 height="24"
@@ -210,6 +270,7 @@
             </li>
             <li class="choose-plan__list">
               <img
+                class="choose-plan__check-2"
                 src="/img/check-2.svg"
                 width="24"
                 height="24"
@@ -219,6 +280,7 @@
             </li>
             <li class="choose-plan__list">
               <img
+                class="choose-plan__check-2"
                 src="/img/check-2.svg"
                 width="24"
                 height="24"
@@ -234,6 +296,7 @@
         </div>
         <div class="choose-plan__item">
           <img
+            class="choose-plan__ill-free"
             src="./img/illustration-free.svg"
             width="145"
             height="165"
@@ -243,6 +306,7 @@
           <ul class="choose-plan__list--item">
             <li class="choose-plan__list">
               <img
+                class="choose-plan__check-2"
                 src="/img/check-2.svg"
                 width="24"
                 height="24"
@@ -252,6 +316,7 @@
             </li>
             <li class="choose-plan__list">
               <img
+                class="choose-plan__check-2"
                 src="/img/check-2.svg"
                 width="24"
                 height="24"
@@ -261,6 +326,7 @@
             </li>
             <li class="choose-plan__list">
               <img
+                class="choose-plan__check-2"
                 src="/img/check-2.svg"
                 width="24"
                 height="24"
@@ -270,6 +336,7 @@
             </li>
             <li class="choose-plan__list">
               <img
+                class="choose-plan__check-2"
                 src="/img/check-2.svg"
                 width="24"
                 height="24"
@@ -292,16 +359,18 @@
           it easier for you when you move locations.
         </p>
         <img
+          class="global-net__lassmap"
           src="./img/huge-global.svg"
           width="1060"
           height="538"
           alt="global-lassmap"
         />
         <img
+          class="global-net__sponsors"
           src="./img/sponsored.svg"
           width="1136"
           height="538"
-          alt="logo-sponsores"
+          alt="logo-sponsors"
         />
       </section>
 
@@ -315,8 +384,9 @@
         </p>
         <div class="trusted-customer__slider">
           <div class="trusted-customer__item">
-            <div class="trusted-customer--datauser">
+            <div class="trusted-customer__datauser">
               <img
+                class="trusted-customer__riezh-robert"
                 src="./img/riezh-robert.svg"
                 width="50"
                 height="50"
@@ -328,18 +398,25 @@
               </div>
               <div class="trusted-customer__rating">
                 <p class="trusted-customer__text">4.5</p>
-                <img src="./img/star.svg" alt="star" width="16" height="16" />
+                <img
+                  class="trusted-customer__stars"
+                  src="./img/star.svg"
+                  alt="star"
+                  width="16"
+                  height="16"
+                />
               </div>
             </div>
-            <blockquote class="trusted-customer--text">
+            <blockquote class="trusted-customer__text">
               “Wow... I am very happy to use this VPN, it turned out to be more
               than my expectations and so far there have been no problems.
               LaslesVPN always the best”.
             </blockquote>
           </div>
           <div class="trusted-customer__item">
-            <div class="trusted-customer--datauser">
+            <div class="trusted-customer__datauser">
               <img
+                class="trusted-customer__yessica-christy"
                 src="./img/yessica-christy.svg"
                 width="50"
                 height="50"
@@ -351,7 +428,13 @@
               </div>
               <div class="trusted-customer__rating">
                 <p class="trusted-customer__text">4.5</p>
-                <img src="./img/star.svg" width="16" height="16" alt="star" />
+                <img
+                  class="trusted-customer__stars"
+                  src="./img/star.svg"
+                  width="16"
+                  height="16"
+                  alt="star"
+                />
               </div>
             </div>
             <blockquote class="trusted-customer__text">
@@ -360,8 +443,9 @@
             </blockquote>
           </div>
           <div class="trusted-customer__item">
-            <div class="trusted-customer--datauser">
+            <div class="trusted-customer__datauser">
               <img
+                class="trusted-customer__kim-young"
                 src="./img/kim-young-jou.svg"
                 width="50"
                 height="50"
@@ -373,7 +457,13 @@
               </div>
               <div class="trusted-customer__rating">
                 <p class="trusted-customer__text">4.5</p>
-                <img src="./img/star.svg" width="16" height="16" alt="star" />
+                <img
+                  class="trusted-customer__stars"
+                  src="./img/star.svg"
+                  width="16"
+                  height="16"
+                  alt="star"
+                />
               </div>
             </div>
             <blockquote class="trusted-customer__text">
@@ -383,8 +473,18 @@
           </div>
         </div>
         <div class="trusted-customer__control">
-          <button class="button button__left" type="button">left</button>
-          <button class="button button__right" type="button">right</button>
+          <button
+            class="trusted-customer__button button button--left"
+            type="button"
+          >
+            left
+          </button>
+          <button
+            class="trusted-customer__button button button--right"
+            type="button"
+          >
+            right
+          </button>
         </div>
       </section>
 
@@ -397,7 +497,7 @@
             Let's subscribe with us and find the fun.
           </p>
         </div>
-        <button class="button button__subscribe" type="button">
+        <button class="button subscribe__button" type="button">
           Subscribe Now
         </button>
       </section>
@@ -405,6 +505,7 @@
     <footer class="footer">
       <div class="footer__about">
         <img
+          class="footer__logo"
           src="./img/logo.svg"
           width="149"
           height="36"
@@ -415,18 +516,25 @@
           has high security.
         </p>
         <div class="footer__socials">
-          <a class="footer__socials--link" href="#"
+          <a class="footer__link" href="#"
             ><img
+              class="footer__facebook"
               src="./img/facebook.svg"
               width="34"
               height="34"
               alt="facebook"
           /></a>
-          <a class="footer__socials--link" href="#"
-            ><img src="./img/twitter.svg" width="34" height="34" alt="twitter"
+          <a class="footer__link" href="#"
+            ><img
+              class="footer__twitter"
+              src="./img/twitter.svg"
+              width="34"
+              height="34"
+              alt="twitter"
           /></a>
-          <a class="footer__socials--link" href="#">
+          <a class="footer__link" href="#">
             <img
+              class="footer__instagram"
               src="./img/instagram.svg"
               width="34"
               height="34"
@@ -438,7 +546,7 @@
       <nav class="footer__header">
         <div class="footer__item">
           <h5 class="footer__subtitle">Product</h5>
-          <ul class="footer__item--list">
+          <ul class="footer__checklist">
             <li class="footer__list">
               <a class="footer__link" href="#">Download</a>
             </li>
@@ -461,7 +569,7 @@
         </div>
         <div class="footer__item">
           <h5 class="footer__subtitle">Engage</h5>
-          <ul class="footer__item--list">
+          <ul class="footer__checklist">
             <li class="footer__list">
               <a class="footer__link" href="#">LaslesVPN ? </a>
             </li>
@@ -484,7 +592,7 @@
         </div>
         <div class="footer__item">
           <h5 class="footer__subtitle">Earn Money</h5>
-          <ul class="footer__item--list">
+          <ul class="footer__checklist">
             <li class="footer__list">
               <a class="footer__link" href="#">Affiliate</a>
             </li>
